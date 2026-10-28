@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>codecrafthub-course-dashboard</title>
+  <title>CodeCraftHub: Your Learning Management Platform</title>
   <style>
     /* ===== CSS RESET & BASE ===== */
     *,
@@ -247,7 +247,7 @@
 
     /* Updated primary button styling */
     .btn-primary {
-      background-color: #8B5CF6;
+      background: #8B5CF6;
       color: #FFFFFF;
       border: none;
       padding: 10px 16px;
@@ -258,12 +258,12 @@
     }
 
     .btn-primary:hover {
-      background-color: #7C3AED;
+      background: #7C3AED;
     }
 
     /* Success button styling */
     .btn-success {
-      background-color: #F59E0B;
+      background: #F59E0B;
       color: #FFFFFF;
       border: none;
       padding: 10px 16px;
@@ -274,7 +274,7 @@
     }
 
     .btn-success:hover {
-      background-color: #D97706;
+      background: #D97706;
     }
 
     .btn-secondary {
@@ -1138,8 +1138,7 @@
           <td class="actions-cell">
             <button type="button" class="btn btn-amber btn-sm"
               onclick="startEdit(${Number(c.id)})" title="Edit">✏ Edit</button>
-            <button type="button" class="btn-delete btn-sm"
-              onclick="openDeleteModal(${Number(c.id)})" title="Delete">🗑 Delete</button>
+            <button type="button" class="btn btn-danger btn-sm" onclick="handleDelete(${c.id})" title="Remove">Remove</button>
           </td>
         </tr>`).join('');
 
